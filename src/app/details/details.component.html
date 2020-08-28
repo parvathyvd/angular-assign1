@@ -1,0 +1,8 @@
+
+    <button class="btn btn-warning" (click) = "onDisplayChange()">Display Details</button>
+<p *ngIf = "displayTurned">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, 
+    praesentium suscipit voluptas repellat quod odit alias eveniet aliquam hic 
+    quae quidem architecto reprehenderit eos minus eaque labore! Repellat, adipisci suscipit.</p>
+    <hr>
+    <p>The number of times you click the button</p>
+    <p *ngFor = "let numArr of numArray" [ngStyle] = "{backgroundColor: statusColor()}" [ngClass] = "{displayWhite : colorSet}">Number time {{increment}}  </p>
